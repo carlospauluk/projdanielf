@@ -4,11 +4,19 @@ package com.trabalho.entidade;
  *
  * @author Daniel F
  */
-public class Funcionario extends Pessoa {
-    
+public abstract class Funcionario extends Pessoa {
+
     private double salario;
-    
+
     private int ramal;
+
+    public Funcionario() {
+    }
+
+    public Funcionario(double salario, int ramal) {
+        this.salario = salario;
+        this.ramal = ramal;
+    }
 
     public double getSalario() {
         return salario;
@@ -25,7 +33,9 @@ public class Funcionario extends Pessoa {
     public void setRamal(int ramal) {
         this.ramal = ramal;
     }
-    
-    
-    
+
+    public double calculaSalarioAnual() {
+        return (this.getSalario() * 12) + this.getSalario();
+    }
+
 }

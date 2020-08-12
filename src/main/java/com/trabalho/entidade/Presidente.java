@@ -10,9 +10,10 @@ package com.trabalho.entidade;
  * @author carlos
  */
 public class Presidente extends Funcionario {
-    
-    public double calculaSalarioAtual() {
-        return 1.0;
+
+    public Presidente() {
     }
+    
+    
     
 }

@@ -5,10 +5,18 @@ package com.trabalho.entidade;
  * @author Daniel F
  */
 public abstract class Pessoa {
-    
+
     private String nome;
-    
+
     private String documento;
+
+    public Pessoa() {
+    }
+
+    public Pessoa(String nome, String documento) {
+        this.nome = nome;
+        this.documento = documento;
+    }
 
     public String getNome() {
         return nome;
@@ -25,5 +33,9 @@ public abstract class Pessoa {
     public void setDocumento(String documento) {
         this.documento = documento;
     }
-            
+
+    public void exibeDados() {
+        System.out.println(this.getClass().getSimpleName() + ": " + this.nome + " - " + this.documento);
+    }
+
 }

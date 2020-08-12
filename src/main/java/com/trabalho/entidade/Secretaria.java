@@ -10,5 +10,9 @@ package com.trabalho.entidade;
  * @author carlos
  */
 public class Secretaria extends Funcionario {
+
+    public Secretaria() {
+    }
+    
     
 }

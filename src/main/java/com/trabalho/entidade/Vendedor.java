@@ -8,6 +8,14 @@ public class Vendedor extends Funcionario {
     
     private double comissao;
 
+    public Vendedor() {
+    }
+
+    public Vendedor(double comissao) {
+        this.comissao = comissao;
+    }
+    
+
     public double getComissao() {
         return comissao;
     }
@@ -17,7 +25,7 @@ public class Vendedor extends Funcionario {
     }
     
     public double salarioMesComComissao() {
-        return 0.0;
+        return this.getComissao() + this.getSalario();
     }
     
     
